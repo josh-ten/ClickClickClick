@@ -23,7 +23,7 @@ function draw() {
     bubble.update();
   }
 
-  mousePressed();
+  // mousePressed();
 }
 
 function mousePressed() {
