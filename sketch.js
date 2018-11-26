@@ -8,7 +8,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   hue = random(255);
   colorMode(HSB);
-  picture = loadImage('avatar.jpg');
+  // picture = loadImage('avatar.jpg');
 
   bubbles.push(new Bubble(width/2, height/2, 0, 0, height*0.8));
 }
@@ -67,9 +67,9 @@ class Bubble {
   draw() {
     fill(hue, 255, 255);
     noStroke(); 
-    // ellipse(this.pos.x, this.pos.y, this.size, this.size);
+    ellipse(this.pos.x, this.pos.y, this.size, this.size);
 
-    image(picture, this.pos.x-this.size/2, this.pos.y-this.size/2, this.size, this.size);
+    // image(picture, this.pos.x-this.size/2, this.pos.y-this.size/2, this.size, this.size);
   }
   
   subdivide() {
